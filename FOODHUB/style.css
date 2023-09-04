@@ -1,0 +1,873 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Teko', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+
+:root {
+    --color-btn: #FE5634;
+    --lightcolor-btn: #FE7154;
+    --color-bold-text: #351D17;
+    --color-menu-div: #FFB9AB;
+    --black-color: #212121;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#main-div {
+    width: auto;
+    height: auto;
+}
+
+header {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background: #fff;
+}
+
+header nav {
+    width: 80%;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .nav-1 h1 {
+    width: auto;
+    height: auto;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    cursor: default;
+}
+
+header nav .nav-1 h1 span {
+    color: #FE5634;
+}
+
+header nav .nav-2 a {
+    width: auto;
+    height: auto;
+    margin: 0rem 1rem;
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+header nav .nav-2 a:hover {
+    color: var(--color-btn);
+}
+
+
+#home-page {
+    width: 100%;
+    height: 100vh;
+}
+
+#home-page img {
+    width: inherit;
+    height: inherit;
+}
+
+#home-page .img-tag-1,
+#home-page .img-tag-2,
+#home-page .img-tag-3 {
+    width: 12rem;
+    height: 2.2rem;
+    line-height: 2.2rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    background: #fff;
+
+    position: absolute;
+    z-index: 2;
+}
+
+#home-page .img-tag-1 {
+    top: 12rem;
+    right: 5rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#home-page .img-tag-2 {
+    top: 6rem;
+    left: 30rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#home-page .img-tag-3 {
+    bottom: 4rem;
+    right: 19rem;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#home-content {
+    width: 45%;
+    height: 70%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    position: absolute;
+    bottom: 3rem;
+    left: 0;
+    z-index: 2;
+}
+
+#home-content #home-textarea {
+    width: 80%;
+    height: auto;
+}
+
+#home-content #home-textarea h3 {
+    width: auto;
+    height: auto;
+    font-size: 3.5rem;
+    font-weight: 600;
+    letter-spacing: -4px;
+    color: var(--color-bold-text);
+    text-transform: capitalize;
+}
+
+#home-content #home-textarea h4 {
+    width: 80%;
+    height: auto;
+    text-align: justify;
+    margin-top: 2rem;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+#home-srhbox {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#home-srhbox .search-bar {
+    width: 70%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#home-srhbox .search-bar .srh-textbox {
+    width: 70%;
+    height: inherit;
+    padding: 0rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgb(110, 106, 106);
+    border: none;
+    outline: none;
+}
+
+#home-srhbox .search-bar button {
+    width: 30%;
+    height: inherit;
+    font-size: 1.4rem;
+    font-family: monospace;
+    font-weight: 600;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background-color: var(--lightcolor-btn);
+    color: #fff;
+    cursor: pointer;
+}
+
+#home-srhbox .search-bar button:hover {
+    background-color: var(--color-btn);
+}
+
+/* ======================================= menu-page ================================================ */
+
+#menu-page {
+    width: 100%;
+    height: 100vh;
+    padding-top: 4rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#menu-page h1 {
+    margin-bottom: 3rem;
+    width: auto;
+    line-height: 3rem;
+    text-align: center;
+    border-bottom: 3px solid var(--color-btn);
+
+    font-size: 2.3rem;
+    font-weight: 600;
+    text-transform: capitalize;
+
+}
+
+#menu-page>#menu-div {
+    width: inherit;
+    height: inherit;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#menu-page>#menu-div>#menu-content {
+    width: 15%;
+    height: 85%;
+    border-radius: 1.3rem;
+    background-color: var(--color-menu-div);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+#menu-page>#menu-div>#menu-content:hover {
+    background-color: var(--color-btn);
+}
+
+#menu-page>#menu-div>#menu-content>.icon-div {
+    width: 55%;
+    height: 60%;
+    padding: 1.2rem;
+    border-radius: 50%;
+    background-color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-page>#menu-div>#menu-content>.icon-div>img {
+    width: 100%;
+    height: 100%;
+}
+
+#menu-page>#menu-div>#menu-content>a {
+    width: 100%;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.1rem;
+    font-family: monospace;
+    text-transform: capitalize;
+}
+
+#menu-page>#menu-div>#menu-content:hover>a {
+    color: #fff;
+}
+
+/* ======================================== app-page =============================================== */
+
+#app-div {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+#app-div #app-div-img {
+    width: 40%;
+    height: 70vh;
+    display: flex;
+    align-items: end;
+    background-color: var(--color-btn);
+    position: relative;
+}
+
+#app-div #app-div-img img {
+    width: 100%;
+    height: 150%;
+    position: absolute;
+    top: -35%;
+    left: 0;
+}
+
+#app-div #app-content {
+    width: 60%;
+    height: 70vh;
+    background-color: var(--color-btn);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5rem;
+    gap: 1.5rem;
+}
+
+#app-div #app-content h3 {
+    width: auto;
+    height: auto;
+    font-size: 4.5rem;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+#app-div #app-content h5 {
+    width: auto;
+    height: auto;
+    font-size: 1.3rem;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+#app-div #app-content #app-btn {
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#app-div #app-content #app-btn a {
+    width: 12rem;
+    height: 4rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    text-decoration: none;
+    color: #000;
+    overflow: hidden;
+}
+
+#app-div #app-content #app-btn a img {
+    width: 4rem;
+    height: inherit;
+    display: flex;
+    background-color: #fff;
+    text-decoration: none;
+    color: #000;
+    padding: 0.5rem;
+}
+
+#app-div #app-content #app-btn a h6 {
+    width: auto;
+    height: auto;
+    font-size: 0.8rem;
+    text-transform: capitalize;
+}
+
+#app-div #app-content #app-btn a h6 span {
+    font-size: 1.1rem;
+    color: var(--color-btn);
+}
+
+/* ======================================== popular-foods-page =============================================== */
+
+
+#popular-food {
+    width: 100%;
+    height: 170vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    cursor: default;
+}
+
+#popular-food h1 {
+    margin-top: 8rem;
+    width: 90%;
+    line-height: 10vh;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--color-btn);
+}
+
+#popular-food #food-cards {
+    width: 90%;
+    height: auto;
+    text-transform: capitalize;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#popular-food #food-cards .card-content {
+    width: 21vw;
+    height: 60vh;
+    padding-bottom: 0.6rem;
+    text-transform: capitalize;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 3px 20px 1px lightblue;
+    border: 1px solid lightblue;
+    overflow: hidden;
+}
+
+#popular-food #food-cards .card-content img {
+    width: 100%;
+    height: 65%;
+    transition: all 0.5s;
+}
+
+#popular-food #food-cards .card-content img:hover {
+    scale: 1.05;
+}
+
+#popular-food #food-cards .card-content .card-text {
+    width: 100%;
+    height: auto;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#popular-food #food-cards .card-content .card-text h6 {
+    width: 90%;
+    line-height: 2rem;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    color: var(--color-btn);
+}
+
+#popular-food #food-cards .card-content .card-text .card-btn {
+    width: 90%;
+    line-height: 3rem;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+#popular-food #food-cards .card-content .card-text .card-btn button {
+    width: 6rem;
+    line-height: 1.5rem;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-family: monospace;
+    font-weight: 700;
+    background-color: #FE5634;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#popular-food #food-cards .card-content .card-text .card-btn #card-price {
+    width: 3.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-family: monospace;
+    font-weight: 700;
+    background-color: #FE5634;
+    color: #fff;
+}
+
+#popular-food #food-cards .card-content .card-text .card-rating {
+    width: 90%;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+#popular-food #food-cards .card-content .card-text .card-rating img {
+    width: 15%;
+    height: 80%;
+}
+
+/* ======================================== expert-chefs-page =============================================== */
+
+#expert-chef {
+    margin-top: 10vh;
+    width: 100%;
+    height: 120vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--black-color);
+    cursor: default;
+}
+
+#expert-chef #expert-heading {
+    width: 90%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#expert-chef #expert-heading h1 {
+    width: auto;
+    height: auto;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--color-btn);
+}
+
+#expert-chef #expert-heading p {
+    width: auto;
+    height: auto;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: gainsboro;
+}
+
+#expert-chef #chef-card-div {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#expert-chef #chef-card-div .chef-content {
+    width: 22%;
+    height: 100%;
+    background-color: #FE5634;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#expert-chef #chef-card-div .chef-content .white-curve {
+    width: 100%;
+    height: 40%;
+    background-color: #fff;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    position: relative;
+}
+
+#expert-chef #chef-card-div .chef-content .white-curve img {
+    width: 15rem;
+    height: 15rem;
+    border: 5px solid var(--color-btn);
+    background-color: #fff;
+    border-radius: 50%;
+
+    position: absolute;
+    left: 50%;
+    bottom: -50%;
+    transform: translatex(-50%);
+}
+
+#expert-chef #chef-card-div .chef-content .chef-details {
+    width: auto;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#expert-chef #chef-card-div .chef-content .chef-details>h4 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+#expert-chef #chef-card-div .chef-content .chef-details>h6 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+#expert-chef #chef-card-div .chef-content .chef-details>.chef-social {
+    width: 100%;
+    height: 3rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#expert-chef #chef-card-div .chef-content .chef-details .chef-social a {
+    width: auto;
+    height: auto;
+}
+
+#expert-chef #chef-card-div .chef-content .chef-details .chef-social a>img {
+    width: 1.7rem;
+    height: 1.7rem;
+    filter: brightness(1) invert(1);
+}
+
+/* ======================================== collaboration-page =============================================== */
+
+#collaboration {
+    width: 100%;
+    height: 80vh;
+    margin: 10vh 0px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: default;
+}
+
+#collaboration h1 {
+    width: 90%;
+    height: auto;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--color-btn);
+}
+
+#collaboration .collab-img {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#collaboration .collab-img a {
+    width: auto;
+    height: auto;
+}
+
+#collaboration .collab-img a img {
+    width: 11rem;
+    height: 5rem;
+    filter: grayscale(1);
+    transition: all linear 0.5s;
+}
+
+#collaboration .collab-img a img:hover {
+    filter: grayscale(0);
+}
+
+/* ======================================== book-table-page =============================================== */
+
+#book-table {
+    width: 100%;
+    height: 100vh;
+    margin: 20vh 0px;
+    display: flex;
+    text-transform: capitalize;
+    position: relative;
+}
+
+#book-table #table-img {
+    width: 60%;
+    height: 100%;
+}
+
+#book-table #table-img img {
+    width: 100%;
+    height: 100%;
+}
+
+#book-table #tablebook-form {
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    right: 0rem;
+    transform: translateY(-50%);
+    color: #fff;
+    background-color: #fe5634;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#book-table #tablebook-form form {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#book-table #tablebook-form form div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#book-table #tablebook-form form div label {
+    width: 50%;
+    line-height: 5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: monospace;
+}
+
+#book-table #tablebook-form form div input {
+    width: 50%;
+    height: 2.5rem;
+    border: none;
+    border-bottom: 3px solid #fff;
+    background-color: transparent;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+    outline: none;
+}
+
+#book-table #tablebook-form form div:nth-child(6) > input[type="submit"]{
+    width: 100%;
+    height: auto;
+    background: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: monospace;
+    text-transform: uppercase;
+    color: var(--color-btn);
+}
+
+/* ======================================== contact-page =============================================== */
+
+#contact-page{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-color: var(--black-color);
+    color: #edecec;
+    text-align: justify;
+}
+
+#contact-page #contact-div-1{
+    width: 22%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+}
+
+#contact-page #contact-div-1 h1{
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: -12vh;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+    font-size: 2.5rem;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+
+#contact-page #contact-div-1 h1 span{
+    color: var(--color-btn);
+}
+
+
+#contact-page #contact-div-1 p{
+    width: 80%;
+    height: auto;
+}
+
+#contact-page .con-items{
+    width: 22%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#contact-page .con-items h6{
+    width: auto;
+    height: auto;
+    text-align: center;
+    border-bottom: 5px solid var(--color-btn);
+    font-size: 2.5rem;
+}
+
+#contact-page .con-items #shortlink{
+    width: auto;
+    height: auto;
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-page .con-items #shortlink a{
+    width: 100%;
+    height: auto;
+    text-decoration: none;
+    text-align: justify;
+    color: #edecec;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: capitalize;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
